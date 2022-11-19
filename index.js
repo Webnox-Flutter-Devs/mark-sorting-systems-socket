@@ -23,6 +23,11 @@ io.on('connection', function (socket) {
         console.log('Employee Delete Event Called :- ', data);
         io.sockets.in(myroom).emit('mark_sort_emp_logout', data);
     });
+
+    socket.on('test', function (data) {
+        console.log('Test Called :- ', data);
+        io.sockets.in(myroom).emit('test', data);
+    });
 });
 
 
