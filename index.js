@@ -1,3 +1,4 @@
+require("dotenv").config();
 var app = require('express')();
 var http = require('http').Server(app);
 const cors = require('cors');
